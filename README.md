@@ -1,4 +1,4 @@
-# Hi there, I'm Bryan Chasko 👋
+# 👋 Hello, Friend ^.^
 
 Welcome to my GitHub profile! I'm passionate about cloud computing, software development, and sharing knowledge with the community.
 
@@ -27,6 +27,4 @@ I am an AWS Hero and a software developer engineer with a passion for accessible
 
 ## Get in Touch
 
-If you have any questions or just want to say hi, feel free to connect with me on any of the platforms listed above.
-
-Thanks for visiting my profile!
+Thank you for visiting my profile!
