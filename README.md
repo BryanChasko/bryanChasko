@@ -6,7 +6,7 @@ Welcome to my GitHub profile! I'm passionate about cloud computing, software dev
 
 - [LinkedIn](https://www.linkedin.com/in/bryanChasko)
 - [Twitch](https://www.twitch.tv/bryanChasko)
-- [X (formerly Twitter)](https://x.com/bryanChasko)
+- [X](https://x.com/bryanChasko)
 - [Instagram](https://www.instagram.com/bryanChasko)
 - [AWS Hero Profile](https://aws.amazon.com/developer/community/heroes/bryan-chasko/)
 - [AWSelfTaught Meetup Group for the TX USA/MX/NM USA Borderplex & rural New Mexico](https://meetup.com/AWSelfTaught)
