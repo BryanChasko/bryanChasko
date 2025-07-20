@@ -16,7 +16,7 @@ Feel free to reach out to me on any of these platforms!
 
 ## About Me
 
-I am an AWS Hero, a software developer engineer, project manager, technical designer, inventor and general hack with a passion for accessible user interfaces. I love to pair program, play with emerging technology, and build innovative solutions.
+I am an AWS Hero, a software developer engineer, project manager, technical designer, inventor and hack(err?) with a passion for accessible user interfaces. I love to pair program, play with emerging technology, and build innovative solutions.
 
 ## Skills
 
