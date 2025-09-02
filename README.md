@@ -27,4 +27,4 @@ I am an AWS Hero, a software developer engineer, project manager, technical desi
 
 ## Get in Touch
 
-I'm easy to find on [LinkedIn](https://www.linkedin.com/in/bryanchasko/) and My [AWS Builder Center](https://builder.aws.com/community/@bryanchasko) Profile. 
+I'm easy to find on [LinkedIn](https://www.linkedin.com/in/bryanchasko/) and my [AWS Builder Center](https://builder.aws.com/community/@bryanchasko) Profile. 
