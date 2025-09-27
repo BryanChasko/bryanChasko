@@ -1,18 +1,12 @@
 # 👋 Hello, Friend ^.^
 
-Welcome to my GitHub profile! I'm passionate about cloud computing, software development, and sharing knowledge with the community.
+I'm passionate about cloud computing, software development, and sharing knowledge with the community.
 
 ## Connect with me
 
-- [LinkedIn](https://www.linkedin.com/in/bryanChasko)
-- [Twitch](https://www.twitch.tv/bryanChasko)
-- [X](https://x.com/bryanChasko)
-- [Instagram](https://www.instagram.com/bryanChasko)
-- [AWS Hero Profile](https://aws.amazon.com/developer/community/heroes/bryan-chasko/)
+- [AWS Hero | AWS Builder Center Profile](https://builder.aws.com/community/@bryanchasko)
 - [AWSelfTaught Meetup Group for the TX USA/MX/NM USA Borderplex & rural New Mexico](https://meetup.com/AWSelfTaught)
 - [Personal Website](https://bryanChasko.com)
-
-Feel free to reach out to me on any of these platforms!
 
 ## About Me
 
@@ -24,7 +18,3 @@ I am an AWS Hero, a software developer engineer, project manager, technical desi
 - Software Development
 - DevOps
 - Community Engagement
-
-## Get in Touch
-
-I'm easy to find on [LinkedIn](https://www.linkedin.com/in/bryanchasko/) and my [AWS Builder Center](https://builder.aws.com/community/@bryanchasko) Profile. 
