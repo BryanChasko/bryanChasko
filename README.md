@@ -5,7 +5,7 @@ I'm passionate about cloud computing, software development, and sharing knowledg
 ## Connect with me
 
 - [AWS Hero | AWS Builder Center Profile](https://builder.aws.com/community/@bryanchasko)
-- [AWS UG Cloud Del Norte](https://meetup.com/AWSelfTaught)
+- [AWS Users Group Cloud Del Norte](https://cloudDelNorte.org)
 - [Personal Website](https://bryanChasko.com)
 
 ## About Me
