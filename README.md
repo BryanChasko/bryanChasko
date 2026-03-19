@@ -1,21 +1,20 @@
-# 👋 Hello, Friend ^.^
+# Hello, Friend ^.^
 
-I'm passionate about cloud computing, software development, and sharing knowledge with the community.
+ai, cloud computing, software development, compliant technology, game tech, sharing knowledge
 
 ## Connect with me
 
 - [AWS Hero | AWS Builder Center Profile](https://builder.aws.com/community/@bryanchasko)
+- [Boston Blender Users Group + Graphic Design | NE3D](https://www.meetup.com/bostonblender/)
 - [AWS Users Group Cloud Del Norte](https://cloudDelNorte.org)
 - [Personal Website](https://bryanChasko.com)
 
 ## About Me
 
-I am an AWS Hero, a software developer engineer, project manager, technical designer, inventor and hack(err?) with a passion for accessible user interfaces. I love to pair program, play with emerging technology, and build innovative solutions.
+AWS Hero, project manager, technical designer, inventor, hack(err?). 
+Passion for accessible user interfaces & low-cost spin-down-to-zero solutions. 
+I love to pair program, play with emerging technology, build innovative solutions.
 
-## Things I Do For Fun
-
-- Artificial Intelligence
-- Cloud Computing (AWS)
-- Software Development
-- Game Development
-- Community Engagement
+- NYIP Certified Photographer
+- Remote Connectivity Wonk (Amazon Leo)
+- Nature Nerd
