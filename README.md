@@ -1,6 +1,6 @@
 # Hello, Friend ^.^
 
-ai, cloud computing, software development, compliant technology, game tech, sharing knowledge
+cloud computing, software development, compliant technology, game tech, sharing knowledge
 
 ## Connect with me
 
@@ -16,5 +16,4 @@ Passion for accessible user interfaces & low-cost spin-down-to-zero solutions.
 I love to pair program, play with emerging technology, build innovative solutions.
 
 - NYIP Certified Photographer
-- Remote Connectivity Wonk (Amazon Leo)
 - Nature Nerd
