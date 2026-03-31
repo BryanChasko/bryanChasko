@@ -9,8 +9,9 @@ publishing on [builder.aws.com](https://builder.aws.com/community/@bryanchasko) 
 
 path of least resistence but preferences ~ aws serverless, rust>python>typescript, gamefied, accessible
 
-leveraging on-prem AMD Raedon + Ryzen where plausible | sysadmin stuff around AMD ROCm (Radeon Open Compute)
- + pixel tooling 
+my workbench-
+AMD Raedon + Ryzen | AMD ROCm (Radeon Open Compute)
+ + apple metal + pixel / android tooling 
 
 ai/ml infrastructure, serverless patterns, agentic workflows. aws hero.
 
