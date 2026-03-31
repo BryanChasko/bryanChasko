@@ -10,7 +10,7 @@ running claude code, kiro, goose, and gemini cli as coordinated collectives acro
 amd rocm hardware and aws serverless. ships rust-first, stays on-prem where it counts.
 
 published on [builder.aws.com](https://builder.aws.com/community/@bryanchasko) --
-ai/ml infrastructure, serverless patterns, agentic workflows. AWS Hero.
+ai/ml infrastructure, serverless patterns, agentic workflows. aws hero.
 
 ---
 
@@ -70,4 +70,4 @@ typescript for anything hitting a browser. serverless-first, scale-to-zero alway
 
 the agents handle the repetitive work -- branches, prs, issues, reviews.
 i architect, review, and push the vision forward.
-that's the goal. that's always been the goal.
+that's the goal. that's where this goes.
