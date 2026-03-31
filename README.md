@@ -1,3 +1,5 @@
+^.^ hello, friend
+
 ```
   +--[ bryan chasko ]---------------------------------------+
   |  aws hero . ai/ml infrastructure . cybernetics          |
