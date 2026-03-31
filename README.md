@@ -1,15 +1,18 @@
 ```
   +--[ bryan chasko ]---------------------------------------+
-  |  aws hero . ai/ml infrastructure . multi-agent systems  |
-  |  new mexico . amd rocm . heraldstack                   |
+  |  aws hero . ai/ml infrastructure . cybernetics          |
   +---------------------------------------------------------+
 ```
+publishing on [builder.aws.com](https://builder.aws.com/community/@bryanchasko) --
 
-building the [heraldstack](https://github.com/BryanChasko/HeraldStack) -- a multi-platform agent collective
-running claude code, kiro, goose, and gemini cli as coordinated collectives across
-amd rocm hardware and aws serverless. ships rust-first, stays on-prem where it counts.
+improving alongside my [heraldstack](https://github.com/BryanChasko/HeraldStack) -- my personal multi-platform agent collective
+leveraging goose-cli & LangChain DeepAgents. 
 
-published on [builder.aws.com](https://builder.aws.com/community/@bryanchasko) --
+path of least resistence but preferences ~ aws serverless, rust>python>typescript, gamefied, accessible
+
+leveraging on-prem AMD Raedon + Ryzen where plausible | sysadmin stuff around AMD ROCm (Radeon Open Compute)
+ + pixel tooling 
+
 ai/ml infrastructure, serverless patterns, agentic workflows. aws hero.
 
 ---
