@@ -11,13 +11,9 @@
 ```
 $ systemctl status heraldstack
 
-heraldstack-mcp      unified mcp tooling
-  shannon · haunting · gander · ibeji
-  claude  · kiro     · goose  · gemini
+  harald · stratia · ellow · voss · tarn
+  kade-vox  · ralph-wiggum · orin  · kerouac
 
-microvms             firecracker sandbox
-qdrant · valkey      cache + vector store
-jaeger               opentelemetry tracing
 ```
 
 <details>
@@ -52,11 +48,8 @@ shannon    claude code      entropy (anchor) + theseus (subagents)
 haunting   kiro-cli         poltergeist (orchestrator) + ghost (subagent)
 gander     goose-cli        RISEN profiles, openrouter + ollama routing
 ibeji      gemini cli
-squad      github copilot
+squad      github copilot   bradygaster
 
-mcp endpoints (http, always-on):
-  qdrant   copywriting · writing-inbox · shared-knowledge
-  valkey · jaeger · cache-proxy
 ```
 
 </details>
