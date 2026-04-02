@@ -7,49 +7,78 @@
   |  aws hero . ai/ml infrastructure . cybernetics          |
   +---------------------------------------------------------+
 ```
-publishing on [builder.aws.com](https://builder.aws.com/community/@bryanchasko) --
 
-path of least resistence ~ but preferences ~ aws serverless, rust>python>typescript, gamefied, accessible
+publishing on [builder.aws.com](https://builder.aws.com/community/@bryanchasko)
 
-my workbench ~ AMD Raedon + Ryzen | AMD ROCm (Radeon Open Compute)
- + apple metal + pixel / android tooling 
+---
 
-ai/ml infrastructure, serverless patterns, agentic workflows. aws hero.
+```
+> whoami
+bryan chasko
+aws serverless . rust > python > typescript . agentic workflows . accessible systems
+```
+
+```
+> lspci | grep -i gpu
+AMD Radeon RX  (ROCm)   ........  primary workstation
+Apple Metal              ........  secondary
+Pixel / Android          ........  mobile tooling
+```
 
 ---
 
 ## what's running
 
 ```
-heraldstack-mcp     unified mcp tooling -- shannon . haunting . gander . ibeji
-agentic cli                                  claude . kiro     . goose . gemini 
-microvms in firecracker -- dockerized mcp & sandbox
+$ systemctl status heraldstack
+
+heraldstack-mcp     unified mcp tooling
+  shannon  . haunting  . gander . ibeji
+  claude   . kiro      . goose  . gemini
+
+microvms  . firecracker sandbox
+qdrant    . valkey cache . opentelemetry tracing
 ```
 
 ---
 
-
 ## active projects
 
-improving alongside my [heraldstack](https://github.com/BryanChasko/HeraldStack) -- my personal multi-platform agent collective
-leveraging goose-cli & LangChain DeepAgents. mcp tooling, qdrant vector stores, valkey cache, full opentelemetry tracing.
-agents file prs, review each other's work, have study habits for improving
--- simplify | study | map similar cases | retrace solved routes | shift perspective | split to atoms | solve backwards: 
-   solution to problem | push the boundary
+**[heraldstack](https://github.com/BryanChasko/heraldstack)** — multi-platform agent collective. agents file prs, review each other's work, run on a shared methodology:
 
-[jitsi at $0.24/month](https://github.com/BryanChasko/jitsi-video-hosting) -- self-hosted video at near-zero idle cost.
-ecs express mode + on-demand nlb for webrtc. scale-to-zero on aws without losing udp.
+```
+simplify | study | map | retrace | shift | split | solve backwards
+```
+
+**[jitsi at $0.24/month](https://github.com/BryanChasko/jitsi-video-hosting)** — self-hosted video at near-zero idle cost. ecs express mode + on-demand nlb for webrtc. scale-to-zero on aws without losing udp
+
+<details>
+<summary>internals</summary>
+
+```
+heraldstack agent tiers:
+  shannon   claude code   entropy (anchor) + theseus (subagents)
+  haunting  kiro-cli      poltergeist (orchestrator) + ghost (subagent)
+  gander    goose-cli     RISEN profiles, openrouter + ollama routing
+  ibeji     gemini cli
+  squad     github copilot
+
+mcp endpoints (http, always-on):
+  qdrant (copywriting, writing-inbox, shared-knowledge)
+  valkey . jaeger . cache-proxy
+```
+
+</details>
 
 ---
 
 ## find me
 
-[bryanChasko.com](https://bryanChasko.com) -- personal site, project logs, more links
-
-[El Paso AWS User Group | cloud del norte](https://cloudDelNorte.org) -- aws user group, ruidoso new mexico
-
-[NE3D | Boston Blender User Group](https://cloudDelNorte.org) -- graphic design user group, watertown mass
+[bryanchasko.com](https://bryanChasko.com) · [builder.aws.com](https://builder.aws.com/community/@bryanchasko) · [cloud del norte](https://cloudDelNorte.org) · [ne3d boston blender](https://cloudDelNorte.org)
 
 ---
 
-scale-to-zero
+```
+$ logout
+connection closed
+```
