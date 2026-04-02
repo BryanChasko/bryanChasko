@@ -1,169 +1,158 @@
 <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      @keyframes horizon-shimmer {
-        0% { stop-color: #d2a8ff; stop-opacity: 0.3; }
-        50% { stop-color: #d2a8ff; stop-opacity: 0.6; }
-        100% { stop-color: #d2a8ff; stop-opacity: 0.3; }
+      /* crt scanline overlay */
+      @keyframes scanline-drift {
+        0% { transform: translateY(-4px); }
+        100% { transform: translateY(200px); }
       }
 
-      @keyframes satellite-rotate {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+      /* phosphor flicker — whole screen */
+      @keyframes crt-flicker {
+        0%, 100% { opacity: 1; }
+        4% { opacity: 0.97; }
+        8% { opacity: 1; }
+        12% { opacity: 0.98; }
+        42% { opacity: 1; }
+        44% { opacity: 0.96; }
+        46% { opacity: 1; }
+        78% { opacity: 0.99; }
+        80% { opacity: 0.96; }
+        82% { opacity: 1; }
       }
 
-      @keyframes data-stream-rise {
-        0% { transform: translateY(60px); opacity: 0; }
-        50% { opacity: 1; }
-        100% { transform: translateY(-120px); opacity: 0; }
+      /* prompt appears first */
+      @keyframes prompt-in {
+        0%, 4% { opacity: 0; }
+        5%, 100% { opacity: 1; }
       }
 
-      @keyframes star-twinkle-1 {
-        0%, 100% { opacity: 0.2; }
-        50% { opacity: 0.9; }
+      /* typing reveal — clip rect width grows in steps */
+      @keyframes type-reveal {
+        0%, 7% { width: 0; }
+        8% { width: 0; }
+        38% { width: 182px; }
+        70% { width: 182px; }
+        71% { width: 182px; opacity: 1; }
+        82% { width: 182px; opacity: 1; }
+        83% { opacity: 0.8; }
+        84% { opacity: 0.2; }
+        85% { opacity: 0.9; }
+        86% { opacity: 0.1; }
+        87% { opacity: 0.7; }
+        88% { opacity: 0; }
+        100% { opacity: 0; width: 182px; }
       }
 
-      @keyframes star-twinkle-2 {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.8; }
+      /* cursor blink */
+      @keyframes cursor-blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
       }
 
-      @keyframes star-twinkle-3 {
-        0%, 100% { opacity: 0.15; }
-        50% { opacity: 0.95; }
+      /* cursor follows typed text then vanishes */
+      @keyframes cursor-travel {
+        0%, 7% { transform: translateX(0px); opacity: 0; }
+        8% { transform: translateX(0px); opacity: 1; }
+        38% { transform: translateX(182px); opacity: 1; }
+        48% { transform: translateX(182px); opacity: 1; }
+        49% { transform: translateX(182px); opacity: 0; }
+        100% { opacity: 0; }
       }
 
-      @keyframes sky-fade {
-        0% { stop-color: #0d1117; }
-        50% { stop-color: #1a2c4a; }
-        100% { stop-color: #0d1117; }
+      /* glitch — the whole terminal shakes before vanishing */
+      @keyframes terminal-glitch {
+        0%, 80% { transform: translate(0, 0) skewX(0deg); opacity: 1; }
+        82% { transform: translate(3px, 0) skewX(0.5deg); opacity: 0.8; }
+        83% { transform: translate(-4px, 1px) skewX(-1deg); opacity: 0.3; }
+        84% { transform: translate(2px, -1px) skewX(0.3deg); opacity: 0.9; }
+        85% { transform: translate(-3px, 0) skewX(-0.5deg); opacity: 0.15; }
+        86% { transform: translate(4px, 1px) skewX(1deg); opacity: 0.7; }
+        87% { transform: translate(0, 0) skewX(0deg); opacity: 0.05; }
+        88%, 95% { opacity: 0; transform: translate(0, 0); }
+        96% { opacity: 0.4; transform: translate(1px, 0); }
+        97%, 100% { opacity: 0; transform: translate(0, 0); }
       }
 
-      @keyframes glow-pulse {
-        0% { filter: drop-shadow(0 0 4px #58a6ff); }
-        50% { filter: drop-shadow(0 0 12px #58a6ff); }
-        100% { filter: drop-shadow(0 0 4px #58a6ff); }
+      /* scanline bar */
+      .scanline {
+        animation: scanline-drift 4s linear infinite;
       }
 
-      .satellite {
-        animation: satellite-rotate 8s linear infinite;
-        transform-origin: 400px 80px;
+      /* whole screen flicker */
+      .crt-screen {
+        animation: crt-flicker 0.15s steps(1) infinite, terminal-glitch 10s ease-in-out infinite;
       }
 
-      .data-particle {
-        animation: data-stream-rise 3s ease-out infinite;
+      /* prompt fade-in */
+      .prompt {
+        animation: prompt-in 10s ease-in-out infinite;
       }
 
-      .particle-1 { animation-delay: 0s; }
-      .particle-2 { animation-delay: 0.6s; }
-      .particle-3 { animation-delay: 1.2s; }
-      .particle-4 { animation-delay: 1.8s; }
+      /* typed text reveal */
+      .type-clip rect {
+        animation: type-reveal 10s steps(13) infinite;
+      }
 
-      .star-1 { animation: star-twinkle-1 4s ease-in-out infinite; }
-      .star-2 { animation: star-twinkle-2 3.5s ease-in-out infinite; animation-delay: 0.4s; }
-      .star-3 { animation: star-twinkle-3 4.8s ease-in-out infinite; animation-delay: 1.1s; }
-      .star-4 { animation: star-twinkle-1 3.2s ease-in-out infinite; animation-delay: 0.8s; }
-      .star-5 { animation: star-twinkle-2 4.2s ease-in-out infinite; animation-delay: 1.5s; }
-
-      .glow-ring { animation: glow-pulse 2.5s ease-in-out infinite; }
+      /* cursor composite: blink + travel */
+      .cursor-block {
+        animation: cursor-blink 0.7s steps(1) infinite, cursor-travel 10s steps(13) infinite;
+      }
     </style>
 
-    <defs>
-      <linearGradient id="sky-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" style="stop-color: #0d1117; stop-opacity: 1;" />
-        <stop offset="60%" style="stop-color: #1a2c4a; stop-opacity: 0.4;" />
-        <stop offset="100%" style="stop-color: #d2a8ff; stop-opacity: 0.25;">
-          <animate attributeName="stop-color" values="#d2a8ff; #b8a3ff; #d2a8ff" dur="6s" repeatCount="indefinite" />
-        </stop>
-      </linearGradient>
+    <!-- scanline pattern -->
+    <pattern id="scanlines" patternUnits="userSpaceOnUse" width="800" height="4">
+      <rect width="800" height="2" fill="transparent"/>
+      <rect y="2" width="800" height="2" fill="rgba(0,0,0,0.15)"/>
+    </pattern>
 
-      <radialGradient id="dish-glow" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" style="stop-color: #58a6ff; stop-opacity: 0.3;" />
-        <stop offset="100%" style="stop-color: #58a6ff; stop-opacity: 0;" />
-      </radialGradient>
-    </defs>
+    <!-- clip path for typing reveal -->
+    <clipPath id="typing-mask">
+      <rect class="type-clip" x="0" y="0" width="0" height="40">
+        <animate attributeName="width" values="0;0;0;0;0;0;0;0;182;182;182;182;182;182;182;182;182;182;182;182;0" dur="10s" repeatCount="indefinite" calcMode="discrete"/>
+      </rect>
+    </clipPath>
   </defs>
 
-  <!-- dark background -->
-  <rect width="800" height="200" fill="#0d1117"/>
+  <!-- deep black background -->
+  <rect width="800" height="200" fill="#0a0a0a"/>
 
-  <!-- sky gradient background -->
-  <rect width="800" height="200" fill="url(#sky-gradient)"/>
+  <!-- subtle vignette -->
+  <rect width="800" height="200" fill="url(#vignette)" opacity="0.4"/>
 
-  <!-- distant stars scattered (upper regions) -->
-  <g class="stars" opacity="0.7">
-    <circle cx="120" cy="30" r="1.2" fill="#58a6ff" class="star-1" />
-    <circle cx="180" cy="25" r="0.9" fill="#7ee787" class="star-2" />
-    <circle cx="250" cy="35" r="1" fill="#58a6ff" class="star-3" />
-    <circle cx="680" cy="28" r="1.1" fill="#d2a8ff" class="star-4" />
-    <circle cx="740" cy="32" r="0.8" fill="#58a6ff" class="star-5" />
+  <!-- the crt screen group — flickers + glitches as one unit -->
+  <g class="crt-screen">
+
+    <!-- faint green phosphor ambience -->
+    <rect width="800" height="200" fill="#001a00" opacity="0.3"/>
+
+    <!-- scanline overlay -->
+    <rect width="800" height="200" fill="url(#scanlines)" opacity="0.6"/>
+
+    <!-- moving scanline bar -->
+    <rect class="scanline" x="0" y="-4" width="800" height="6" fill="rgba(0,255,65,0.04)"/>
+
+    <!-- prompt: ^.^$ -->
+    <g class="prompt">
+      <text x="224" y="108" font-family="'Courier New', 'Lucida Console', monospace" font-size="22" font-weight="bold" fill="#00ffff" opacity="0.95" letter-spacing="1">
+        <tspan fill="#00ffff" style="filter: drop-shadow(0 0 6px rgba(0,255,255,0.8)) drop-shadow(0 0 12px rgba(0,255,255,0.4))">^.^</tspan><tspan fill="#00ffff" dx="4" style="filter: drop-shadow(0 0 6px rgba(0,255,255,0.8))">$</tspan>
+      </text>
+    </g>
+
+    <!-- typed text: hello, friend — revealed by clip -->
+    <g clip-path="url(#typing-mask)" transform="translate(296, 88)">
+      <text x="0" y="20" font-family="'Courier New', 'Lucida Console', monospace" font-size="22" font-weight="bold" fill="#00ff41" letter-spacing="1" style="filter: drop-shadow(0 0 5px rgba(0,255,65,0.9)) drop-shadow(0 0 10px rgba(0,255,65,0.5)) drop-shadow(0 0 20px rgba(0,255,65,0.3))">hello, friend</text>
+    </g>
+
+    <!-- blinking cursor block -->
+    <g class="cursor-block" transform="translate(296, 90)">
+      <rect x="0" y="0" width="13" height="22" rx="1" fill="#00ff41" opacity="0.95" style="filter: drop-shadow(0 0 8px rgba(0,255,65,0.9)) drop-shadow(0 0 16px rgba(0,255,65,0.5))"/>
+    </g>
+
+    <!-- top edge phosphor bleed -->
+    <rect x="0" y="0" width="800" height="1" fill="#00ff41" opacity="0.06"/>
+    <!-- bottom edge phosphor bleed -->
+    <rect x="0" y="199" width="800" height="1" fill="#00ff41" opacity="0.06"/>
+
   </g>
-
-  <!-- desert horizon line with glow -->
-  <g opacity="0.9">
-    <path d="M 0 160 Q 200 155 400 158 T 800 160" stroke="#d2a8ff" stroke-width="2" fill="none" opacity="0.8"/>
-    <path d="M 0 162 Q 200 157 400 160 T 800 162" stroke="#7ee787" stroke-width="1" fill="none" opacity="0.4"/>
-  </g>
-
-  <!-- satellite dish structure with animation -->
-  <g class="satellite glow-ring">
-    <!-- dish bowl -->
-    <ellipse cx="400" cy="80" rx="35" ry="28" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.9"/>
-    <path d="M 385 85 Q 400 95 415 85" fill="none" stroke="#58a6ff" stroke-width="1.5" opacity="0.7"/>
-    <path d="M 385 80 Q 400 88 415 80" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
-
-    <!-- central feed -->
-    <line x1="400" y1="50" x2="400" y2="110" stroke="#58a6ff" stroke-width="2" opacity="0.8"/>
-    <circle cx="400" cy="50" r="2.5" fill="#58a6ff" opacity="0.95"/>
-    <circle cx="400" cy="110" r="3" fill="#7ee787" opacity="0.8"/>
-
-    <!-- support arms -->
-    <line x1="390" y1="105" x2="365" y2="140" stroke="#58a6ff" stroke-width="1.5" opacity="0.6"/>
-    <line x1="410" y1="105" x2="435" y2="140" stroke="#58a6ff" stroke-width="1.5" opacity="0.6"/>
-
-    <!-- glow aura -->
-    <circle cx="400" cy="80" r="42" fill="url(#dish-glow)"/>
-  </g>
-
-  <!-- data particles rising from dish -->
-  <g class="data-particle particle-1">
-    <circle cx="400" cy="140" r="2" fill="#58a6ff" opacity="0.8"/>
-    <circle cx="400" cy="140" r="4" fill="#58a6ff" opacity="0.3"/>
-  </g>
-  <g class="data-particle particle-2">
-    <circle cx="390" cy="140" r="1.8" fill="#7ee787" opacity="0.7"/>
-    <circle cx="390" cy="140" r="3.5" fill="#7ee787" opacity="0.2"/>
-  </g>
-  <g class="data-particle particle-3">
-    <circle cx="410" cy="140" r="2" fill="#d2a8ff" opacity="0.75"/>
-    <circle cx="410" cy="140" r="4" fill="#d2a8ff" opacity="0.25"/>
-  </g>
-  <g class="data-particle particle-4">
-    <circle cx="400" cy="140" r="1.6" fill="#58a6ff" opacity="0.65"/>
-    <circle cx="400" cy="140" r="3.2" fill="#58a6ff" opacity="0.15"/>
-  </g>
-
-  <!-- constellation node connections forming above -->
-  <g opacity="0.5">
-    <!-- left node -->
-    <circle cx="280" cy="40" r="3" fill="#58a6ff" opacity="0.7"/>
-    <line x1="340" y1="60" x2="280" y2="40" stroke="#58a6ff" stroke-width="1" opacity="0.4" stroke-dasharray="3,2"/>
-
-    <!-- center-left node -->
-    <circle cx="350" cy="25" r="2.5" fill="#7ee787" opacity="0.6"/>
-    <line x1="370" y1="55" x2="350" y2="25" stroke="#7ee787" stroke-width="0.8" opacity="0.3" stroke-dasharray="3,2"/>
-
-    <!-- center-right node -->
-    <circle cx="450" cy="20" r="2.5" fill="#d2a8ff" opacity="0.6"/>
-    <line x1="430" y1="55" x2="450" y2="20" stroke="#d2a8ff" stroke-width="0.8" opacity="0.3" stroke-dasharray="3,2"/>
-
-    <!-- right node -->
-    <circle cx="520" cy="35" r="3" fill="#58a6ff" opacity="0.7"/>
-    <line x1="460" y1="60" x2="520" y2="35" stroke="#58a6ff" stroke-width="1" opacity="0.4" stroke-dasharray="3,2"/>
-  </g>
-
-  <!-- text: bryan chasko -->
-  <text x="400" y="185" font-family="monospace" font-size="18" font-weight="bold" text-anchor="middle" fill="#58a6ff" opacity="0.95" letter-spacing="2">
-    bryan chasko
-  </text>
 </svg>

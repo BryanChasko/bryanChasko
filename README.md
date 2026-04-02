@@ -1,8 +1,6 @@
 <p align="center">
-  <img src=".github/hero.svg" alt="bryan chasko" width="800">
+  <img src=".github/hero.svg" alt="^.^$ hello, friend" width="800">
 </p>
-
-^.^ hello, friend
 
 ```
   +--[ bryan chasko ]---------------------------------------+
