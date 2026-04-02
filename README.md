@@ -46,7 +46,7 @@ jaeger               opentelemetry tracing
 $ cat /var/log/projects
 ```
 
-**[heraldstack](https://github.com/BryanChasko/heraldstack)** — multi-platform agent collective running a shared methodology
+**[heraldstack](https://github.com/heraldstack)** — multi-platform agent collective running a shared methodology
 
 ```
 simplify | study | map | retrace | shift | split | solve backwards
