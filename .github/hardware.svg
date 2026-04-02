@@ -1,0 +1,31 @@
+<svg viewBox="0 0 800 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes flicker { 0%,100%{opacity:1} 42%{opacity:0.97} 44%{opacity:0.94} 46%{opacity:1} }
+      .crt { animation: flicker 0.2s steps(1) infinite; }
+    </style>
+    <pattern id="s2" patternUnits="userSpaceOnUse" width="800" height="4">
+      <rect width="800" height="2" fill="transparent"/><rect y="2" width="800" height="2" fill="#000" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="72" fill="#0a0a0a"/>
+  <g class="crt">
+    <rect width="800" height="72" fill="url(#s2)"/>
+    <text x="400" y="20" font-family="'Courier New',monospace" font-size="13" fill="#00e5ff" opacity="0" text-anchor="middle" letter-spacing="1">
+      &gt; lspci | grep -i gpu
+      <animate attributeName="opacity" from="0" to="0.7" begin="3s" dur="0.8s" fill="freeze"/>
+    </text>
+    <text x="400" y="38" font-family="'Courier New',monospace" font-size="12" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="1">
+      amd radeon rx (rocm)  ········  primary
+      <animate attributeName="opacity" from="0" to="0.8" begin="4s" dur="0.6s" fill="freeze"/>
+    </text>
+    <text x="400" y="52" font-family="'Courier New',monospace" font-size="12" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="1">
+      apple metal           ········  secondary
+      <animate attributeName="opacity" from="0" to="0.8" begin="4.4s" dur="0.6s" fill="freeze"/>
+    </text>
+    <text x="400" y="66" font-family="'Courier New',monospace" font-size="12" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="1">
+      pixel / android       ········  mobile
+      <animate attributeName="opacity" from="0" to="0.8" begin="4.8s" dur="0.6s" fill="freeze"/>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes flicker { 0%,100%{opacity:1} 42%{opacity:0.97} 44%{opacity:0.94} 46%{opacity:1} }
+      .crt { animation: flicker 0.2s steps(1) infinite; }
+    </style>
+    <pattern id="s3" patternUnits="userSpaceOnUse" width="800" height="4">
+      <rect width="800" height="2" fill="transparent"/><rect y="2" width="800" height="2" fill="#000" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="120" fill="#0a0a0a"/>
+  <g class="crt">
+    <rect width="800" height="120" fill="url(#s3)"/>
+    <text x="400" y="18" font-family="'Courier New',monospace" font-size="13" fill="#00e5ff" opacity="0" text-anchor="middle" letter-spacing="1">
+      $ systemctl status heraldstack
+      <animate attributeName="opacity" from="0" to="0.7" begin="6s" dur="0.8s" fill="freeze"/>
+    </text>
+    <text x="400" y="40" font-family="'Courier New',monospace" font-size="12" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="2">
+      heraldstack-mcp · unified mcp tooling
+      <animate attributeName="opacity" from="0" to="0.8" begin="7s" dur="0.5s" fill="freeze"/>
+    </text>
+    <text x="400" y="56" font-family="'Courier New',monospace" font-size="12" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="2">
+      shannon · haunting · gander · ibeji
+      <animate attributeName="opacity" from="0" to="0.7" begin="7.5s" dur="0.5s" fill="freeze"/>
+    </text>
+    <text x="400" y="70" font-family="'Courier New',monospace" font-size="12" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="2">
+      claude  · kiro     · goose  · gemini
+      <animate attributeName="opacity" from="0" to="0.7" begin="8s" dur="0.5s" fill="freeze"/>
+    </text>
+    <text x="400" y="92" font-family="'Courier New',monospace" font-size="12" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="2">
+      microvms · firecracker sandbox
+      <animate attributeName="opacity" from="0" to="0.7" begin="8.5s" dur="0.5s" fill="freeze"/>
+    </text>
+    <text x="400" y="108" font-family="'Courier New',monospace" font-size="12" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="2">
+      qdrant · valkey · jaeger · opentelemetry
+      <animate attributeName="opacity" from="0" to="0.7" begin="9s" dur="0.5s" fill="freeze"/>
+    </text>
+  </g>
+</svg>

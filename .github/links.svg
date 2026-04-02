@@ -1,0 +1,12 @@
+<svg viewBox="0 0 800 28" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes flicker { 0%,100%{opacity:1} 42%{opacity:0.97} 44%{opacity:0.94} 46%{opacity:1} }
+      .crt { animation: flicker 0.2s steps(1) infinite; }
+    </style>
+  </defs>
+  <rect width="800" height="28" fill="#0a0a0a"/>
+  <g class="crt">
+    <text x="400" y="19" font-family="'Courier New',monospace" font-size="12" fill="#00ff41" opacity="0.7" text-anchor="middle" letter-spacing="2">bryanchasko.com · builder.aws.com · cloud del norte · ne3d boston blender</text>
+  </g>
+</svg>
