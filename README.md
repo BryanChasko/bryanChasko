@@ -3,22 +3,8 @@
 </p>
 
 <p align="center">
-  <img src=".github/tagline.svg?v=4" alt="aws hero · ai infrastructure · cybernetics" width="800">
+  <img src=".github/tagline.svg?v=5" alt="aws hero · ai infrastructure · cybernetics" width="800">
 </p>
-
----
-
-```
-> whoami
-aws serverless · rust > python > typescript · agentic workflows · accessible systems
-```
-
-```
-> lspci | grep -i gpu
-amd radeon rx (rocm)     ········  primary
-apple metal              ········  secondary
-pixel / android          ········  mobile
-```
 
 ---
 
@@ -33,6 +19,20 @@ microvms             firecracker sandbox
 qdrant · valkey      cache + vector store
 jaeger               opentelemetry tracing
 ```
+
+<details>
+<summary><code>$ whoami</code></summary>
+
+```
+aws serverless · rust > python > typescript · agentic workflows · accessible systems
+
+> lspci | grep -i gpu
+amd radeon rx (rocm)     ········  primary
+apple metal              ········  secondary
+pixel / android          ········  mobile
+```
+
+</details>
 
 ---
 
@@ -65,6 +65,6 @@ mcp endpoints (http, always-on):
 
 <p align="center">
 
-[bryanchasko.com](https://bryanChasko.com) · [builder.aws.com](https://builder.aws.com/community/@bryanchasko) · [cloud del norte](https://cloudDelNorte.org) · [ne3d boston blender](https://meetup.com/bostonblender)
+[bryanchasko.com](https://bryanChasko.com)  -->  [builder.aws](https://builder.aws.com/community/@bryanchasko)  -->  [cloud del norte](https://cloudDelNorte.org)  -->  [ne3d boston blender](https://meetup.com/bostonblender)
 
 </p>
