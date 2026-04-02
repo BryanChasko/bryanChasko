@@ -21,28 +21,32 @@
   </defs>
   <rect width="800" height="36" fill="#0a0a0a"/>
 
-  <g opacity="0">
+  <g opacity="0" font-family="'Courier New',monospace" font-size="14" font-weight="bold">
     <animate attributeName="opacity" from="0" to="1" dur="2s" fill="freeze"/>
 
-    <!-- centered tagline as single text run -->
-    <text x="400" y="24" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" letter-spacing="1.5">
-      <tspan fill="#ff9900">aws hero</tspan><tspan fill="#00ff41" dx="8"> </tspan><tspan class="flicker" fill="#00e5ff">ai</tspan><tspan fill="#00ff41"> infrastructure</tspan><tspan fill="#00ff41" dx="8"> </tspan><tspan class="flicker" fill="#00e5ff">cybernetics</tspan>
+    <!-- three equispaced segments at 200, 400, 600 -->
+    <text x="200" y="24" text-anchor="middle" fill="#ff9900">aws hero</text>
+
+    <!-- circuit 1 -->
+    <g class="circuit-a" transform-origin="300 18">
+      <circle cx="300" cy="18" r="3" fill="none" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
+      <circle cx="300" cy="15" r="1" fill="#00ff41" opacity="0.5"/>
+      <line x1="298" y1="18" x2="302" y2="18" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
+      <line x1="300" y1="16" x2="300" y2="20" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
+    </g>
+
+    <text x="400" y="24" text-anchor="middle">
+      <tspan class="flicker" fill="#00e5ff">ai</tspan><tspan fill="#00ff41"> infrastructure</tspan>
     </text>
 
-    <!-- circuit separator 1 — between "aws hero" and "ai" -->
-    <g class="circuit-a" transform-origin="338 18">
-      <circle cx="338" cy="18" r="3" fill="none" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
-      <circle cx="338" cy="15" r="1" fill="#00ff41" opacity="0.5"/>
-      <line x1="336" y1="18" x2="340" y2="18" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
-      <line x1="338" y1="16" x2="338" y2="20" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
+    <!-- circuit 2 -->
+    <g class="circuit-b" transform-origin="500 18">
+      <circle cx="500" cy="18" r="3" fill="none" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
+      <circle cx="503" cy="18" r="1" fill="#00ff41" opacity="0.5"/>
+      <line x1="498" y1="18" x2="502" y2="18" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
+      <line x1="500" y1="16" x2="500" y2="20" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
     </g>
 
-    <!-- circuit separator 2 — between "infrastructure" and "cybernetics" -->
-    <g class="circuit-b" transform-origin="468 18">
-      <circle cx="468" cy="18" r="3" fill="none" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
-      <circle cx="471" cy="18" r="1" fill="#00ff41" opacity="0.5"/>
-      <line x1="466" y1="18" x2="470" y2="18" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
-      <line x1="468" y1="16" x2="468" y2="20" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
-    </g>
+    <text class="flicker" x="600" y="24" text-anchor="middle" fill="#00e5ff">cybernetics</text>
   </g>
 </svg>
