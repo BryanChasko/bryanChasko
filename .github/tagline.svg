@@ -1,40 +1,20 @@
-<svg viewBox="0 0 800 40" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 800 36" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      @keyframes cyber-glitch {
-        0%, 85% { transform: translate(0,0); opacity: 1; }
-        86% { transform: translate(3px,-1px); opacity: 0.6; }
-        87% { transform: translate(-2px,1px); opacity: 0.3; }
-        88% { transform: translate(1px,0); opacity: 0.8; }
-        89%, 92% { transform: translate(0,0); opacity: 1; }
-        93% { transform: translate(-1px,0); opacity: 0.5; }
-        94% { transform: translate(2px,1px); opacity: 0.2; }
-        95%, 100% { transform: translate(0,0); opacity: 1; }
-      }
-      @keyframes cyber-color {
-        0%, 84% { fill: #00ff41; }
-        86% { fill: #ff0040; }
-        87% { fill: #00e5ff; }
-        88% { fill: #ff0040; }
-        89% { fill: #00ff41; }
-        93% { fill: #ff0040; }
-        94% { fill: #00e5ff; }
-        95%, 100% { fill: #00ff41; }
-      }
-      .cybernetics {
-        animation: cyber-glitch 6s ease-in-out infinite, cyber-color 6s ease-in-out infinite;
+      @keyframes cyber-flicker {
+        0%, 88% { opacity: 0.85; }
+        89% { opacity: 0.4; }
+        90% { opacity: 0.9; }
+        92% { opacity: 0.3; }
+        93% { opacity: 0.85; }
+        96% { opacity: 0.5; }
+        97%, 100% { opacity: 0.85; }
       }
     </style>
   </defs>
-  <rect width="800" height="40" fill="#0a0a0a"/>
-  <!-- main tagline fades in at 20s, stays -->
-  <text x="400" y="26" font-family="'Courier New',monospace" font-size="14" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="3">
-    aws hero · ai/ml infrastructure ·
-    <animate attributeName="opacity" from="0" to="0.8" begin="20s" dur="2s" fill="freeze"/>
-  </text>
-  <!-- cybernetics — separate element for glitch treatment -->
-  <text class="cybernetics" x="556" y="26" font-family="'Courier New',monospace" font-size="14" fill="#00ff41" opacity="0" letter-spacing="3">
-    cybernetics
-    <animate attributeName="opacity" from="0" to="0.9" begin="21s" dur="1.5s" fill="freeze"/>
+  <rect width="800" height="36" fill="#0a0a0a"/>
+  <text x="400" y="24" font-family="'Courier New',monospace" font-size="14" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="3">
+    aws hero · ai/ml infrastructure · <tspan style="animation: cyber-flicker 5s ease-in-out infinite" fill="#00e5ff">cybernetics</tspan>
+    <animate attributeName="opacity" from="0" to="0.85" dur="2s" fill="freeze"/>
   </text>
 </svg>
