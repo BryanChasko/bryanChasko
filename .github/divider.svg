@@ -1,0 +1,22 @@
+<svg viewBox="0 0 800 12" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes scan { 0% { transform: translateX(-200px); } 100% { transform: translateX(800px); } }
+      @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.8; } }
+    </style>
+  </defs>
+  <rect width="800" height="12" fill="#0a0a0a"/>
+  <line x1="80" y1="6" x2="720" y2="6" stroke="#00ff41" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="400" cy="6" r="2" fill="#00ff41" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="390" cy="6" r="1" fill="#00ff41" opacity="0.3">
+    <animate attributeName="opacity" values="0.15;0.5;0.15" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  <circle cx="410" cy="6" r="1" fill="#00ff41" opacity="0.3">
+    <animate attributeName="opacity" values="0.15;0.5;0.15" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  <rect x="-200" y="4" width="60" height="4" fill="#00ff41" opacity="0.06" rx="2">
+    <animateTransform attributeName="transform" type="translate" values="-200,0;1000,0" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>

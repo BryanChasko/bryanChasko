@@ -8,77 +8,79 @@
   +---------------------------------------------------------+
 ```
 
-publishing on [builder.aws.com](https://builder.aws.com/community/@bryanchasko)
-
----
+<p align="center">
+  <img src=".github/divider.svg" alt="" width="800">
+</p>
 
 ```
 > whoami
-bryan chasko
 aws serverless . rust > python > typescript . agentic workflows . accessible systems
 ```
 
 ```
 > lspci | grep -i gpu
-AMD Radeon RX  (ROCm)   ........  primary workstation
+AMD Radeon RX  (ROCm)    ........  primary
 Apple Metal              ........  secondary
-Pixel / Android          ........  mobile tooling
+Pixel / Android          ........  mobile
 ```
 
----
-
-## what's running
+<p align="center">
+  <img src=".github/divider.svg" alt="" width="800">
+</p>
 
 ```
 $ systemctl status heraldstack
 
-heraldstack-mcp     unified mcp tooling
-  shannon  . haunting  . gander . ibeji
-  claude   . kiro      . goose  . gemini
+heraldstack-mcp      unified mcp tooling
+  shannon . haunting . gander . ibeji
+  claude  . kiro     . goose  . gemini
 
-microvms  . firecracker sandbox
-qdrant    . valkey cache . opentelemetry tracing
+microvms             firecracker sandbox
+qdrant . valkey      cache + vector store
+jaeger               opentelemetry tracing
 ```
 
----
+<p align="center">
+  <img src=".github/status.svg" alt="systems nominal" width="800">
+</p>
 
-## active projects
+```
+$ cat /var/log/projects
+```
 
-**[heraldstack](https://github.com/BryanChasko/heraldstack)** — multi-platform agent collective. agents file prs, review each other's work, run on a shared methodology:
+**[heraldstack](https://github.com/BryanChasko/heraldstack)** — multi-platform agent collective running a shared methodology
 
 ```
 simplify | study | map | retrace | shift | split | solve backwards
 ```
 
-**[jitsi at $0.24/month](https://github.com/BryanChasko/jitsi-video-hosting)** — self-hosted video at near-zero idle cost. ecs express mode + on-demand nlb for webrtc. scale-to-zero on aws without losing udp
+**[jitsi at $0.24/month](https://github.com/BryanChasko/jitsi-video-hosting)** — self-hosted video at near-zero idle cost. ecs express + on-demand nlb. scale-to-zero on aws without losing udp
 
 <details>
-<summary>internals</summary>
+<summary><code>$ cat /etc/heraldstack/agents.conf</code></summary>
 
 ```
-heraldstack agent tiers:
-  shannon   claude code   entropy (anchor) + theseus (subagents)
-  haunting  kiro-cli      poltergeist (orchestrator) + ghost (subagent)
-  gander    goose-cli     RISEN profiles, openrouter + ollama routing
-  ibeji     gemini cli
-  squad     github copilot
+shannon    claude code      entropy (anchor) + theseus (subagents)
+haunting   kiro-cli         poltergeist (orchestrator) + ghost (subagent)
+gander     goose-cli        RISEN profiles, openrouter + ollama routing
+ibeji      gemini cli
+squad      github copilot
 
 mcp endpoints (http, always-on):
-  qdrant (copywriting, writing-inbox, shared-knowledge)
+  qdrant   copywriting . writing-inbox . shared-knowledge
   valkey . jaeger . cache-proxy
 ```
 
 </details>
 
----
-
-## find me
+<p align="center">
+  <img src=".github/divider.svg" alt="" width="800">
+</p>
 
 [bryanchasko.com](https://bryanChasko.com) · [builder.aws.com](https://builder.aws.com/community/@bryanchasko) · [cloud del norte](https://cloudDelNorte.org) · [ne3d boston blender](https://meetup.com/bostonblender)
 
----
+publishing on [builder.aws.com](https://builder.aws.com/community/@bryanchasko)
 
-```
-$ logout
-connection closed
-```
+<p align="center">
+  <img src=".github/logout.svg" alt="$ logout — connection closed" width="800">
+</p>

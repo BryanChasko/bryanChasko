@@ -1,0 +1,39 @@
+<svg viewBox="0 0 800 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes flicker-out {
+        0%, 70% { opacity: 1; }
+        72% { opacity: 0.7; }
+        74% { opacity: 0.2; }
+        76% { opacity: 0.8; }
+        78% { opacity: 0.1; }
+        80% { opacity: 0.6; }
+        82%, 92% { opacity: 0; }
+        94% { opacity: 0.3; }
+        96%, 100% { opacity: 0; }
+      }
+    </style>
+    <clipPath id="logout-type">
+      <rect x="0" y="0" width="0" height="24">
+        <animate attributeName="width" values="0;0;0;0;0;0;18;36;54;72;90;108;126;144;162;180;198;198;198;198;198;198;198;198;198;198;198;198;198;198" dur="10s" repeatCount="indefinite" calcMode="discrete"/>
+      </rect>
+    </clipPath>
+    <clipPath id="closed-type">
+      <rect x="0" y="0" width="0" height="24">
+        <animate attributeName="width" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;18;36;54;72;90;108;126;144;162;180;198;198" dur="10s" repeatCount="indefinite" calcMode="discrete"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <rect width="800" height="48" fill="#0a0a0a"/>
+  <g style="animation: flicker-out 10s ease-in-out infinite">
+    <!-- $ logout -->
+    <text x="300" y="20" font-family="'Courier New',monospace" font-size="14" fill="#00e5ff" opacity="0.8">$</text>
+    <g clip-path="url(#logout-type)" transform="translate(314, 4)">
+      <text x="0" y="16" font-family="'Courier New',monospace" font-size="14" fill="#00ff41" opacity="0.8">logout</text>
+    </g>
+    <!-- connection closed -->
+    <g clip-path="url(#closed-type)" transform="translate(300, 24)">
+      <text x="0" y="16" font-family="'Courier New',monospace" font-size="14" fill="#00ff41" opacity="0.5">connection closed</text>
+    </g>
+  </g>
+</svg>
