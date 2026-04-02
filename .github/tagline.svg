@@ -1,25 +1,40 @@
-<svg viewBox="0 0 800 48" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 800 40" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      @keyframes fade-in { 0%, 8% { opacity: 0; } 12%, 100% { opacity: 1; } }
-      @keyframes box-draw {
-        0%, 3% { stroke-dashoffset: 1400; }
-        20% { stroke-dashoffset: 0; }
-        100% { stroke-dashoffset: 0; }
+      @keyframes cyber-glitch {
+        0%, 85% { transform: translate(0,0); opacity: 1; }
+        86% { transform: translate(3px,-1px); opacity: 0.6; }
+        87% { transform: translate(-2px,1px); opacity: 0.3; }
+        88% { transform: translate(1px,0); opacity: 0.8; }
+        89%, 92% { transform: translate(0,0); opacity: 1; }
+        93% { transform: translate(-1px,0); opacity: 0.5; }
+        94% { transform: translate(2px,1px); opacity: 0.2; }
+        95%, 100% { transform: translate(0,0); opacity: 1; }
       }
-      @keyframes flicker {
-        0%, 100% { opacity: 1; }
-        42% { opacity: 0.97; }
-        44% { opacity: 0.94; }
-        46% { opacity: 1; }
+      @keyframes cyber-color {
+        0%, 84% { fill: #00ff41; }
+        86% { fill: #ff0040; }
+        87% { fill: #00e5ff; }
+        88% { fill: #ff0040; }
+        89% { fill: #00ff41; }
+        93% { fill: #ff0040; }
+        94% { fill: #00e5ff; }
+        95%, 100% { fill: #00ff41; }
       }
-      .tagline-text { animation: fade-in 4s ease-out infinite; }
-      .box-border { animation: box-draw 4s ease-out infinite, flicker 0.2s steps(1) infinite; }
+      .cybernetics {
+        animation: cyber-glitch 6s ease-in-out infinite, cyber-color 6s ease-in-out infinite;
+      }
     </style>
   </defs>
-  <rect width="800" height="48" fill="#0a0a0a"/>
-  <!-- box border draws itself -->
-  <rect class="box-border" x="200" y="6" width="400" height="36" rx="1" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.5" stroke-dasharray="1400" stroke-dashoffset="1400"/>
-  <!-- tagline text fades in after box draws -->
-  <text class="tagline-text" x="400" y="30" font-family="'Courier New',monospace" font-size="13" fill="#00ff41" opacity="0.8" text-anchor="middle" letter-spacing="2">aws hero . ai/ml infrastructure . cybernetics</text>
+  <rect width="800" height="40" fill="#0a0a0a"/>
+  <!-- main tagline fades in at 20s, stays -->
+  <text x="400" y="26" font-family="'Courier New',monospace" font-size="14" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="3">
+    aws hero · ai/ml infrastructure ·
+    <animate attributeName="opacity" from="0" to="0.8" begin="20s" dur="2s" fill="freeze"/>
+  </text>
+  <!-- cybernetics — separate element for glitch treatment -->
+  <text class="cybernetics" x="556" y="26" font-family="'Courier New',monospace" font-size="14" fill="#00ff41" opacity="0" letter-spacing="3">
+    cybernetics
+    <animate attributeName="opacity" from="0" to="0.9" begin="21s" dur="1.5s" fill="freeze"/>
+  </text>
 </svg>

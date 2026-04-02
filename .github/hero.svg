@@ -14,19 +14,21 @@
         0%, 49% { opacity: 1; }
         50%, 100% { opacity: 0; }
       }
-      @keyframes glitch {
+      @keyframes glitch-2x {
         0%, 78% { transform: translate(0,0); opacity: 1; }
         80% { transform: translate(2px,0); opacity: 0.7; }
         81% { transform: translate(-3px,1px); opacity: 0.2; }
         82% { transform: translate(1px,-1px); opacity: 0.8; }
         83% { transform: translate(-2px,0); opacity: 0.1; }
         84% { transform: translate(3px,1px); opacity: 0.6; }
-        85%, 93% { opacity: 0; transform: translate(0,0); }
-        94% { opacity: 0.3; transform: translate(1px,0); }
-        95%, 100% { opacity: 0; }
+        85%, 100% { opacity: 0; transform: translate(0,0); }
       }
-      .screen { animation: flicker 0.2s steps(1) infinite, glitch 10s ease-in-out infinite; }
-      .cursor { animation: blink 0.7s steps(1) infinite; }
+      .screen {
+        animation: flicker 0.2s steps(1) 20s,
+                   glitch-2x 10s ease-in-out 2;
+        animation-fill-mode: forwards;
+      }
+      .cursor { animation: blink 0.7s steps(1) 20s; animation-fill-mode: forwards; }
     </style>
     <pattern id="scan" patternUnits="userSpaceOnUse" width="800" height="4">
       <rect width="800" height="2" fill="transparent"/>
@@ -34,7 +36,7 @@
     </pattern>
     <clipPath id="reveal">
       <rect x="0" y="0" width="0" height="30">
-        <animate attributeName="width" values="0;0;0;0;14;28;42;56;70;84;98;112;126;140;154;168;182;182;182;182;182;182;182;182;182;182;182;182;182;182;182" dur="10s" repeatCount="indefinite" calcMode="discrete"/>
+        <animate attributeName="width" values="0;0;0;0;14;28;42;56;70;84;98;112;126;140;154;168;182;182;182;182;182;182;182;182;182;182;182;182;182;182;182" dur="10s" repeatCount="2" fill="freeze" calcMode="discrete"/>
       </rect>
     </clipPath>
   </defs>
@@ -47,24 +49,24 @@
     <!-- scanlines -->
     <rect width="800" height="80" fill="url(#scan)"/>
 
-    <!-- prompt: ^.^$ — always visible once it fades in -->
+    <!-- prompt -->
     <text x="310" y="47" font-family="'Courier New',monospace" font-size="22" font-weight="bold" fill="#00e5ff" opacity="0.95" letter-spacing="1">
       ^.^$
-      <animate attributeName="opacity" values="0;0;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1" dur="10s" repeatCount="indefinite" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;0;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1" dur="10s" repeatCount="2" fill="freeze" calcMode="discrete"/>
     </text>
 
-    <!-- typed text clipped by reveal rect -->
+    <!-- typed text -->
     <g clip-path="url(#reveal)" transform="translate(378,27)">
       <text x="0" y="20" font-family="'Courier New',monospace" font-size="22" font-weight="bold" fill="#00ff41" letter-spacing="1">hello, friend</text>
     </g>
 
-    <!-- blinking cursor — travels with typed text -->
+    <!-- cursor -->
     <rect class="cursor" y="30" width="13" height="22" rx="1" fill="#00ff41" opacity="0.9">
-      <animate attributeName="x" values="378;378;378;378;392;406;420;434;448;462;476;490;504;518;532;546;560;560;560;560;560;560;560;560;560;560;560;560;560;560;560" dur="10s" repeatCount="indefinite" calcMode="discrete"/>
-      <animate attributeName="opacity" values="0;0;0;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0;0;0;0;0;0;0;0;0;0;0;0" dur="10s" repeatCount="indefinite" calcMode="discrete"/>
+      <animate attributeName="x" values="378;378;378;378;392;406;420;434;448;462;476;490;504;518;532;546;560;560;560;560;560;560;560;560;560;560;560;560;560;560;560" dur="10s" repeatCount="2" fill="freeze" calcMode="discrete"/>
+      <animate attributeName="opacity" values="0;0;0;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0.9;0;0;0;0;0;0;0;0;0;0;0;0" dur="10s" repeatCount="2" fill="freeze" calcMode="discrete"/>
     </rect>
 
-    <!-- phosphor edge bleed -->
+    <!-- phosphor bleed -->
     <rect x="0" y="0" width="800" height="1" fill="#00ff41" opacity="0.04"/>
     <rect x="0" y="79" width="800" height="1" fill="#00ff41" opacity="0.04"/>
   </g>
