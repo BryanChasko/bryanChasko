@@ -74,7 +74,7 @@ mcp endpoints (http, always-on):
 
 ## find me
 
-[bryanchasko.com](https://bryanChasko.com) · [builder.aws.com](https://builder.aws.com/community/@bryanchasko) · [cloud del norte](https://cloudDelNorte.org) · [ne3d boston blender](https://cloudDelNorte.org)
+[bryanchasko.com](https://bryanChasko.com) · [builder.aws.com](https://builder.aws.com/community/@bryanchasko) · [cloud del norte](https://cloudDelNorte.org) · [ne3d boston blender](https://meetup.com/bostonblender)
 
 ---
 
