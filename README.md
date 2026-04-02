@@ -38,7 +38,7 @@ pixel / android          ········  mobile
 simplify | study | map | retrace | shift | split | solve backwards
 ```
 
-**[jitsi at $0.24/month](https://github.com/BryanChasko/jitsi-video-hosting)** — self-hosted video at near-zero idle cost. ecs express + on-demand nlb. scale-to-zero on aws without losing udp
+**[jitsi at $0.24/month](https://github.com/BryanChasko/jitsi-video-hosting)** — AWS-DIY-hosted video at near-zero idle cost
 
 <details>
 <summary><code>$ cat /etc/heraldstack/agents.conf</code></summary>
