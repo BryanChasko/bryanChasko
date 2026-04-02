@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src=".github/tagline.svg?v=3" alt="aws hero · ai/ml infrastructure · cybernetics" width="800">
+  <img src=".github/tagline.svg?v=4" alt="aws hero · ai infrastructure · cybernetics" width="800">
 </p>
 
 ---
