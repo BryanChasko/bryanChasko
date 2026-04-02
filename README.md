@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/hero.svg" alt="^.^$ hello, friend" width="800">
+  <img src=".github/hero.svg?v=2" alt="^.^$ hello, friend" width="800">
 </p>
 
 ```
