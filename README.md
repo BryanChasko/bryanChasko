@@ -32,7 +32,7 @@ pixel / android          ········  mobile
 
 ---
 
-**[heraldstack](https://github.com/heraldstack)** — multi-platform agent collective running a shared methodology
+**[heraldstack](https://github.com/heraldstack)** — multi-platform agent personas harnessed differently sharing memory layers & tooling where plausible
 
 ```
 simplify | study | map | retrace | shift | split | solve backwards
