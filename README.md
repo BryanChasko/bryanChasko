@@ -2,11 +2,9 @@
   <img src=".github/hero.svg?v=2" alt="^.^$ hello, friend" width="800">
 </p>
 
-```
-  +--[ bryan chasko ]---------------------------------------+
-  |  aws hero . ai/ml infrastructure . cybernetics          |
-  +---------------------------------------------------------+
-```
+<p align="center">
+  <img src=".github/tagline.svg" alt="aws hero . ai/ml infrastructure . cybernetics" width="800">
+</p>
 
 <p align="center">
   <img src=".github/divider.svg" alt="" width="800">
