@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".github/hero.svg" alt="bryan chasko" width="800">
+</p>
+
 ^.^ hello, friend
 
 ```
