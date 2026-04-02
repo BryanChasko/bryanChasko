@@ -10,11 +10,46 @@
         96% { opacity: 0.5; }
         97%, 100% { opacity: 0.85; }
       }
+      @keyframes circuit-rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .flicker { animation: cyber-flicker 5s ease-in-out infinite; }
+      .circuit { animation: circuit-rotate 6s linear infinite; }
+      .circuit-slow { animation: circuit-rotate 8s linear infinite; }
     </style>
   </defs>
   <rect width="800" height="36" fill="#0a0a0a"/>
-  <text x="400" y="24" font-family="'Courier New',monospace" font-size="14" fill="#00ff41" opacity="0" text-anchor="middle" letter-spacing="3">
-    aws hero · ai/ml infrastructure · <tspan style="animation: cyber-flicker 5s ease-in-out infinite" fill="#00e5ff">cybernetics</tspan>
-    <animate attributeName="opacity" from="0" to="0.85" dur="2s" fill="freeze"/>
-  </text>
+
+  <!-- all text bold, fades in -->
+  <g opacity="0" font-family="'Courier New',monospace" font-size="14" font-weight="bold" letter-spacing="3">
+    <animate attributeName="opacity" from="0" to="1" dur="2s" fill="freeze"/>
+
+    <!-- aws hero — amazon orange -->
+    <text x="248" y="24" fill="#ff9900">aws hero</text>
+
+    <!-- circuit dot 1 -->
+    <g class="circuit" transform-origin="320 18">
+      <circle cx="320" cy="18" r="3" fill="none" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
+      <circle cx="320" cy="15" r="1" fill="#00ff41" opacity="0.6"/>
+      <line x1="318" y1="18" x2="322" y2="18" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
+      <line x1="320" y1="16" x2="320" y2="20" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
+    </g>
+
+    <!-- ai infrastructure — "ai" in cyan with flicker, rest in green -->
+    <text x="342" y="24">
+      <tspan class="flicker" fill="#00e5ff">ai</tspan><tspan fill="#00ff41" dx="4">infrastructure</tspan>
+    </text>
+
+    <!-- circuit dot 2 -->
+    <g class="circuit-slow" transform-origin="504 18">
+      <circle cx="504" cy="18" r="3" fill="none" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
+      <circle cx="507" cy="18" r="1" fill="#00ff41" opacity="0.6"/>
+      <line x1="502" y1="18" x2="506" y2="18" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
+      <line x1="504" y1="16" x2="504" y2="20" stroke="#00ff41" stroke-width="0.5" opacity="0.3"/>
+    </g>
+
+    <!-- cybernetics — cyan with flicker -->
+    <text class="flicker" x="526" y="24" fill="#00e5ff">cybernetics</text>
+  </g>
 </svg>
