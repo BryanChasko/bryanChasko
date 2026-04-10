@@ -38,7 +38,7 @@ pixel / android          ········  mobile
 simplify | study | map | retrace | shift | split | solve backwards
 ```
 
-**cybernetic bond** — bryanchasko ↔ heraldstack. bryanchasko is the human operator and canonical author; heraldstack is the collective of ai agents that share bryan's memory, tooling, and writing standards. one does not exist without the other for this body of work. the heraldstack github identity commits infra and agent definitions; the bryanchasko identity commits reviews and human-authored narrative. see [heraldstack/heraldstack README](https://github.com/heraldstack/heraldstack#cybernetic-bond) for the canonical framing
+**cybernetic bond** — bryanchasko ↔ heraldstack. bryanchasko is the human operator and canonical author; heraldstack is the collective of ai agents that share bryan's memory, tooling, and writing standards. one does not exist without the other for this body of work. the heraldstack github identity commits infra and agent definitions; the bryanchasko identity commits reviews and human-authored narrative. see [heraldstack/heraldstack README](https://github.com/heraldstack/heraldstack#who-is-heraldstack) for the canonical framing
 
 **[jitsi at $0.24/month](https://github.com/BryanChasko/jitsi-video-hosting)** — AWS-DIY-hosted video at near-zero idle cost
 
