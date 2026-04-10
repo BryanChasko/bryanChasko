@@ -32,11 +32,13 @@ pixel / android          ········  mobile
 
 ---
 
-**[heraldstack](https://github.com/heraldstack)** — multi-platform agent personas harnessed differently sharing memory layers & tooling where plausible
+**[heraldstack](https://github.com/heraldstack/heraldstack)** — multi-platform agent personas harnessed differently, sharing memory layers and tooling where plausible. canonical library lives at [heraldstack/heraldstack](https://github.com/heraldstack/heraldstack) — persona files, patterns, ADRs, registry
 
 ```
 simplify | study | map | retrace | shift | split | solve backwards
 ```
+
+**cybernetic bond** — bryanchasko ↔ heraldstack. bryanchasko is the human operator and canonical author; heraldstack is the collective of ai agents that share bryan's memory, tooling, and writing standards. one does not exist without the other for this body of work. the heraldstack github identity commits infra and agent definitions; the bryanchasko identity commits reviews and human-authored narrative. see [heraldstack/heraldstack README](https://github.com/heraldstack/heraldstack#who-is-heraldstack) for the canonical framing
 
 **[jitsi at $0.24/month](https://github.com/BryanChasko/jitsi-video-hosting)** — AWS-DIY-hosted video at near-zero idle cost
 
@@ -44,11 +46,13 @@ simplify | study | map | retrace | shift | split | solve backwards
 <summary><code>$ cat /etc/heraldstack/agents.conf</code></summary>
 
 ```
-shannon    claude code      entropy (anchor) + theseus (subagents)
-haunting   kiro-cli         poltergeist (orchestrator) + ghost (subagent)
-gander     goose-cli        RISEN profiles, openrouter + ollama routing
-ibeji      gemini cli
-squad      github copilot   bradygaster
+shannon        claude code cli       entropy (anchor) + theseus (subagents)
+haunting       kiro-cli              poltergeist (orchestrator) + ghost (subagent)
+gander         goose-cli             RISEN profiles, openrouter + ollama routing
+ibeji          gemini cli            —
+splintercells  langchain deep agents —
+mujallad       codex cli             —
+squadron       github copilot        brady gaster subagent config method
 
 ```
 
