@@ -15,13 +15,7 @@
   
   aws serverless · rust > python > typescript · agentic workflows ·
   accessible systems
-  
-  │ lspci | grep -i gpu
-  
-  amd radeon rx (rocm)     ········  primary
-  apple metal              ········  secondary
-  pixel / android          ········  mobile
-  
+    
   </details>
   
   **[heraldstack](https://github.com/heraldstack/heraldstack)** —
