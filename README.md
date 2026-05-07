@@ -24,7 +24,7 @@
   [heraldstack/heraldstack](https://github.com/heraldstack/heraldstack)
   — persona files, patterns, registry
   
-  simplify | study | map | retrace | shift | split | solve backwards
+  <p align="center">  simplify | study | map | retrace | shift | split | solve backwards </p>
   
   **cybernetic bond** — bryanchasko ↔ heraldstack. bryanchasko is the
   human operator and canonical author; heraldstack is the collective of
