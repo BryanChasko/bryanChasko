@@ -22,7 +22,7 @@
   multi-platform agent personas harnessed differently, sharing memory
   layers and tooling where plausible. canonical library lives at
   [heraldstack/heraldstack](https://github.com/heraldstack/heraldstack)
-  — persona files, patterns, ADRs, registry
+  — persona files, patterns, registry
   
   simplify | study | map | retrace | shift | split | solve backwards
   
