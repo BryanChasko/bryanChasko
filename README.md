@@ -40,23 +40,6 @@
   $0.24/month](https://github.com/BryanChasko/jitsi-video-hosting)** —
   AWS-DIY-hosted video at near-zero idle cost
   
-  <details>
-  <summary><code>$ cat /etc/heraldstack/agents.conf</code></summary>
-  
-  shannon        claude code cli       entropy (anchor) + theseus
-  (subagents)
-  haunting       kiro-cli              poltergeist (orchestrator) +
-  ghost (subagent)
-  gander         goose-cli             RISEN profiles, openrouter +
-  ollama routing
-  ibeji          gemini cli            —
-  splintercells  langchain deep agents —
-  mujallad       codex cli             —
-  squadron       github copilot        brady gaster subagent config
-  method
-  
-  </details>
-  
   <p align="center">
     <a
   href="https://bryanChasko.com"><strong>bryanchasko.com</strong></a> ·
